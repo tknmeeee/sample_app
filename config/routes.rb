@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
 
   get 'todolists' => 'todolists#index'
+
+  get 'todolists/:id' => 'todolists#show', as: 'todolist'
 end
